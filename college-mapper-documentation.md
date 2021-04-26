@@ -4,7 +4,11 @@ We are glad to see you are interested in the ins-and-outs of college mapper. Ple
 
 ## Structure
 
-College Mapper is organized into [client](https://github.com/TAMS-Open-Source/college-mapper-client) and [server](https://github.com/TAMS-Open-Source/college-mapper-api) repositories.
+College Mapper is organized into [server](https://github.com/TAMS-Open-Source/college-mapper-api) and [client](https://github.com/TAMS-Open-Source/college-mapper-client) repositories.
+
+The server is implemented as a simple [Flask](https://flask.palletsprojects.com/en/1.1.x/) API. On development, it runs automatically on `localhost:5000`. For hosting, it is simple to deploy this API on [Heroku](https://www.heroku.com/), with the assistance of the `gunicorn` library. 
+
+The client is implemented as a single-page React application, bootstrapped with [create-react-app](https://create-react-app.dev/). 
 
 ## Running the Application Locally
 
@@ -42,3 +46,6 @@ If you would like, you can add a `REACT_APP_SUPPORT_LINK` link to a form in whic
 1. `cd client`
 2. `yarn && yarn start`
 
+## License
+
+College Mapper is licensed under the [MIT License](https://opensource.org/licenses/MIT).
